@@ -1,6 +1,6 @@
 const Box = () => {
     return (
-        <div className= "sqaure">  </div>
+        <div className= "square">  </div>
     )
 }
 export default Box
