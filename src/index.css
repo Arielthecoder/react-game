@@ -19,7 +19,7 @@
 .square {
   width: 200px;
   height: 200px;
-  border: solid 2px plum;
+  border: solid 4px plum;
   box-sizing: border-box;
   display: flex;
   justify-content: center;

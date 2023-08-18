@@ -1,6 +1,7 @@
-const Box = () => {
+const Box = ({ id, box}) => {
+    console.log(box)
     return (
-        <div className= "square">  </div>
+        <div className= "square" id={id}>  </div>
     )
 }
 export default Box
