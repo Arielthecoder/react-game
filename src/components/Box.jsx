@@ -1,4 +1,4 @@
-const Box = ({ id, board, setBoard, result, setResult, boards }) => {
+const Box = ({ id, board, setBoards, result, setResult, boards, winnerMessage }) => {
     const handleClick = (e) => {
         const take = e.target.firstChild.classList.contains("circle") ||
             e.target.firstChild.classList.contains("square")
@@ -25,11 +25,12 @@ const Box = ({ id, board, setBoard, result, setResult, boards }) => {
         }
 
         })
-        setBoard(changeBoard)
+        setBoards(changeBoard)
     }
 
     return (
-        <div className="square" id={id} onClick={handleClick}>
+        <div className="square" id={id} onClick={
+            !winnerMessage && handleClick}>
             <div className={board}></div>
             </div>
         
